@@ -87,11 +87,12 @@ fun MainScreen() {
                 ) {
                     Icon(
                         imageVector = Icons.Default.ChevronLeft,
-                        contentDescription = "Önceki",
+                        contentDescription = "",
                         modifier = Modifier
                             .weight(0.05f)
                             .clickable {
                                 if (index > 0) index--
+                                else index = foodList.size - 1
                             },
                     )
                     Image(
@@ -104,7 +105,7 @@ fun MainScreen() {
                     )
                     Icon(
                         imageVector = Icons.Default.ChevronRight,
-                        contentDescription = "Önceki",
+                        contentDescription = "",
                         modifier = Modifier
                             .weight(0.05f)
                             .clickable {
